@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&family=Jura&display=swap');
+/* font-family: "Jura", sans-serif; */
+/* font-family: "JetBrains Mono", monospace; */
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+article{
+    display: flex;
+}
+.bg-color{
+    background-image: url(images/last.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.main-article{
+    background-image: url(images/bg-2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.line{
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 1px;
+    height: 100vh;
+}
+.right-column{
+    padding: 10vw;
+    width: 30vw;
+    display: grid;
+    grid-template-columns: 120px 130px 120px;
+    grid-template-rows: 120px 120px 120px;
+    grid-template-areas: "grid-1 grid-2 grid-2"
+                "grid-3 grid-3 grid-4"
+                "grid-5 grid-6 grid-6";
+}
+.grid-1{
+    grid-area: grid-1;
+}
+.grid-2{
+    grid-area: grid-2;
+    padding-left: 4vw !important;
+}
+.grid-3{
+    grid-area: grid-3;
+    padding: 2vw 1vw !important;
+}
+.grid-4{
+    grid-area: grid-4;
+}
+.grid-5{
+    grid-area: grid-5;
+}
+.grid-6{
+    grid-area: grid-6;
+}
+.grid-elem{
+    text-decoration: none;
+    font-family: "Jura", sans-serif;
+    font-size: 40px;
+    border: rgba(255, 255, 255, 0.2) 1px solid;
+    padding: 2vw;
+}
+.grid-elem-red{
+    background-color: red;
+}
+.left-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    width: 46vw;
+    padding: 2vw;
+}
+.left-column>h1{
+    font-family: "JetBrains Mono", monospace;
+    font-size: 80px;
+}
+.left-column>p{
+    font-family: "Jura", sans-serif;
+    font-size: 40px;
+}
+span{
+    color: #FF8B8B;
+}
+.gmail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 4px;
+}
+.form{
+    color: white;
+    font-size: 18px;
+    font-family: "Jura", sans-serif;
+    border: #AD00FF 2px solid;
+    background-color: rgba(255, 255, 255, 0);
+    width: 25vw;
+}
+
+.name{
+    border-radius: 50px 50px 0 0;
+    height: 5vh;
+    padding: 0 0 0 3vh;
+}
+
+.message{
+    border-radius: 0 0 50px 50px;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 0 0 3vh;
+}
+.email{
+    height: 3.8vh;
+    padding: 0 0 0 3vh;
+}
+.left-column5{
+    align-items: center;
+}
+.mes{
+    color: white;
+    font-size: 18px;
+    font-family: "Jura", sans-serif;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+.mes:focus{
+    border: black 2px solid;
+}
+.button{
+    background-color: #EEC3FF;
+    color: black;
+    font-size: 22px;
+    font-family: "Jura", sans-serif;
+    border: #AD00FF 2px solid;
+    border-radius: 50px 0 50px 0;
+    padding: 1vw 3vw;
+    align-self: flex-end;
+}
+.contact{
+    margin: 3vw 0;
+    /* width: 25vw;
+    display: flex;
+    gap: 4vw; */
+}
+.contact>img{
+    border: rgba(255, 255, 255, 0.2) 2px solid;
+    padding: 3vh 3vw;
+    height: 3vh;
+}
+.bx-wrapper{
+    width: 38vw;
+    height: 65vh;
+}
+a:hover{
+    transform: scale(1.1);
+}
+.ball{
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    background-color: #DA8BFF;
+    top: 0;
+    left: 46.5vw;
+}
+.ball-1{
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    background-color: #DA8BFF;
+    top: 1800px;
+    left: 47.5vw;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .text {
+    width: 29ch;
+    color: white;
+    font-family: monospace;
+    font-size: 30px;
+    white-space: nowrap; /* не переносить текст на другую строку */
+    overflow: hidden; /* скрываем переполнение контентом */
+    border-right: 3px solid white; /* рисуем курсор */
+    animation: cursor 0.75s step-end infinite, printed_text 5s steps(29);
+  }
+  
+  @keyframes cursor {
+    0% {
+      border-color: white;
+    }
+  
+    50% {
+      border-color: transparent;
+    }
+  
+    100% {
+      border-color: white;
+    }
+  }
+  
+  @keyframes printed_text {
+    from {
+      width: 0;
+    }
+  }
+  
